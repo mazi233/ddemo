@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "npm run lint --fix",
-    "dev": "npm run lint && tsc",
+    "lint": "tsc && eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "dev": "tsc && npm run lint",
     "prepare": "husky install"
   },
   "devDependencies": {
